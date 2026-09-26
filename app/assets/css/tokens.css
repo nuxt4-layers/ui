@@ -1,0 +1,58 @@
+:root {
+  color-scheme: light dark;
+
+  --ui-fill-page: light-dark(#f7f8fa, #111318);
+  --ui-fill-surface: light-dark(#ffffff, #1a1d24);
+  --ui-fill-subtle: light-dark(#eef1f5, #242832);
+  --ui-fill-accent: light-dark(#315bd6, #8da8ff);
+  --ui-fill-danger: light-dark(#b42318, #ff8a80);
+
+  --ui-pen-primary: light-dark(#17191f, #f5f7fb);
+  --ui-pen-secondary: light-dark(#4d5562, #bdc5d1);
+  --ui-pen-on-accent: #ffffff;
+  --ui-pen-link: light-dark(#234fca, #a9bbff);
+  --ui-pen-danger: light-dark(#9f1c13, #ffaaa3);
+
+  --ui-edge-default: light-dark(#cdd3dc, #414753);
+  --ui-edge-strong: light-dark(#707988, #8e98a8);
+  --ui-edge-focus: light-dark(#174bd2, #a9bbff);
+
+  --ui-font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --ui-font-size-sm: 0.875rem;
+  --ui-font-size-md: 1rem;
+  --ui-font-size-lg: 1.25rem;
+  --ui-line-height: 1.5;
+
+  --ui-space-1: 0.25rem;
+  --ui-space-2: 0.5rem;
+  --ui-space-3: 0.75rem;
+  --ui-space-4: 1rem;
+  --ui-space-6: 1.5rem;
+  --ui-space-8: 2rem;
+
+  --ui-radius-sm: 0.25rem;
+  --ui-radius-md: 0.5rem;
+  --ui-radius-lg: 0.75rem;
+  --ui-focus-width: 0.1875rem;
+  --ui-motion-fast: 120ms;
+  --ui-motion-standard: 180ms;
+}
+
+html {
+  background: var(--ui-fill-page);
+  color: var(--ui-pen-primary);
+  font-family: var(--ui-font-sans);
+  line-height: var(--ui-line-height);
+}
+
+:focus-visible {
+  outline: var(--ui-focus-width) solid var(--ui-edge-focus);
+  outline-offset: 0.1875rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --ui-motion-fast: 0ms;
+    --ui-motion-standard: 0ms;
+  }
+}

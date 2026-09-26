@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "ui",
+  "package": "@nuxt4-layers/ui",
+  "kind": "foundation",
+  "description": "Reusable presentation primitives, semantic design tokens and accessibility-safe UI defaults.",
+  "publicExports": [".", "./theme", "./tokens.css"],
+  "owns": ["semantic-presentation-tokens", "ui-primitives", "theme-validation", "theme-application"],
+  "excludes": ["authentication", "authorization", "application-navigation", "account-management", "preference-persistence"],
+  "dependencies": []
+}
